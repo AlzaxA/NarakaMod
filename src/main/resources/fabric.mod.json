@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "naraka",
+	"version": "${version}",
+	"name": "Naraka",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"AlzaxA"
+	],
+	"contact": {
+		"sources": "https://github.com/AlzaxA/NarakaMod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/naraka/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.naraka.bladepoint.Naraka"
+		],
+		"fabric-datagen": [
+			"com.naraka.bladepoint.NarakaDataGenerator"
+		]
+	},
+	"mixins": [
+		"naraka.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
