@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
     // 添加白甲套装
-    WHITE_ARMOR("white_aromr", 5, new int[]{3, 8, 6, 3}, 0, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER));
+    WHITE_ARMOR("white_armor", 4, new int[]{1, 3, 2, 1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER));
 
     private final String name;
     // 耐久倍数

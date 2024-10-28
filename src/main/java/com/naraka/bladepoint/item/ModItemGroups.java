@@ -21,6 +21,10 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_ETHER);
                         entries.add(ModItems.CAGULATION_PILLS);
                         entries.add(ModItems.LARGR_CAGULATION_PILLS);
+                        entries.add(ModItems.WHITE_ARMOR_CHESTPLATE);
+                        entries.add(ModItems.WHITE_ARMOR_BOOTS);
+                        entries.add(ModItems.WHITE_ARMOR_LEGGINGS);
+                        entries.add(ModItems.WHITE_ARMOR_HELMET);
                     }).build());
 
     public static void init() {

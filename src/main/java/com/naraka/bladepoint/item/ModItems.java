@@ -2,6 +2,7 @@ package com.naraka.bladepoint.item;
 
 import com.naraka.bladepoint.Naraka;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,6 +15,14 @@ public class ModItems {
     public static final Item CAGULATION_PILLS = registerItems("cagulation_pills", new Item(new FabricItemSettings().food(ModFoodComponent.CAGULATION_PILLS).maxCount(8)));
     // 添加大型凝血丸 ———— large cagulation pills
     public static final Item LARGR_CAGULATION_PILLS = registerItems("large_cagulation_pills", new Item(new FabricItemSettings().food(ModFoodComponent.LARGE_CAGULATION_PILLS).maxCount(2)));
+    // 添加白甲_头盔 ———— white_armor_helmet
+    public  static final Item WHITE_ARMOR_HELMET = registerItems("white_armor_helmet",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.HELMET,new FabricItemSettings()));
+    // 添加白甲_靴子 ———— white_armor_boots
+    public  static final Item WHITE_ARMOR_BOOTS = registerItems("white_armor_boots",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.BOOTS,new FabricItemSettings()));
+    // 添加白甲_胸甲 ———— white_armor_chestplate
+    public  static final Item WHITE_ARMOR_CHESTPLATE = registerItems("white_armor_chestplate",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.CHESTPLATE,new FabricItemSettings()));
+    // 添加白甲_护腿 ———— white_armor_leggings
+    public  static final Item WHITE_ARMOR_LEGGINGS = registerItems("white_armor_leggings",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
 
     private static Item registerItems(String id, Item item) {
         // 注册物品到游戏中

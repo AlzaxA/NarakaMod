@@ -2,5 +2,9 @@
   "itemGroup.naraka_group": "永劫无间",
   "item.naraka.ice_ether": "冰之以太",
   "item.naraka.cagulation_pills": "凝血丸",
-  "item.naraka.large_cagulation_pills": "大型凝血丸"
+  "item.naraka.large_cagulation_pills": "大型凝血丸",
+  "item.naraka.white_armor_helmet": "白甲·头盔",
+  "item.naraka.white_armor_chestplate": "白甲·胸甲",
+  "item.naraka.white_armor_leggings": "白甲·护腿",
+  "item.naraka.white_armor_boots": "白甲·靴子"
 }
