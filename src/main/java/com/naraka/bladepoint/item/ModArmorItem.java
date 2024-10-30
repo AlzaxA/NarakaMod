@@ -17,6 +17,7 @@ public class ModArmorItem extends ArmorItem {
         super(material, type, settings);
     }
 
+
     private static final Map<ArmorMaterial, StatusEffectInstance> map =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterial.WHITE_ARMOR, new StatusEffectInstance(StatusEffects.GLOWING, 1000, 1, false, false, true))
@@ -24,22 +25,44 @@ public class ModArmorItem extends ArmorItem {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (!world.isClient() && entity instanceof PlayerEntity player && JudgingDurability(player)) {
-            DurabilityProtection();
+        if (!world.isClient() && entity instanceof PlayerEntity player) {
+            if (JudgingHelmetDurability(player)) {
+                player.getInventory().getArmorStack(3);
+            } else {
+
+            }
+            if (JudgingChestplateDurability(player)) {
+                player.getInventory().getArmorStack(2);
+            } else {
+
+            }
+            if (JudgingLeggingsDurability(player)) {
+                player.getInventory().getArmorStack(1);
+            } else {
+
+            }
+            if (JudgingBootsDurability(player)) {
+                player.getInventory().getArmorStack(0);
+            } else {
+
+            }
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
 
-    private void DurabilityProtection() {
+    private boolean JudgingHelmetDurability(PlayerEntity player) {
+        return this.material.getDurability(Type.HELMET) - player.getInventory().getArmorStack(3).getDamage() <= 1;
     }
 
-    private boolean JudgingDurability(PlayerEntity player) {
-        if (this.material.getDurability(Type.HELMET) - player.getInventory().getArmorStack(3).getDamage() == 1) {
-            return true;
-        } else if (this.material.getDurability(Type.CHESTPLATE) - player.getInventory().getArmorStack(2).getDamage() == 1) {
-            return true;
-        } else if (this.material.getDurability(Type.LEGGINGS) - player.getInventory().getArmorStack(1).getDamage() == 1) {
-            return true;
-        } else return this.material.getDurability(Type.BOOTS) - player.getInventory().getArmorStack(0).getDamage() == 1;
+    private boolean JudgingChestplateDurability(PlayerEntity player) {
+        return this.material.getDurability(Type.CHESTPLATE) - player.getInventory().getArmorStack(2).getDamage() <= 1;
+    }
+
+    private boolean JudgingLeggingsDurability(PlayerEntity player) {
+        return this.material.getDurability(Type.LEGGINGS) - player.getInventory().getArmorStack(1).getDamage() <= 1;
+    }
+
+    private boolean JudgingBootsDurability(PlayerEntity player) {
+        return this.material.getDurability(Type.BOOTS) - player.getInventory().getArmorStack(0).getDamage() <= 1;
     }
 }
