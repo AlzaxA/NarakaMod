@@ -6,5 +6,8 @@
   "item.naraka.white_armor_helmet": "White Armor Helmet",
   "item.naraka.white_armor_chestplate": "White Armor Chestplate",
   "item.naraka.white_armor_leggings": "White Armor Leggings",
-  "item.naraka.white_armor_boots": "White Armor Boots"
+  "item.naraka.white_armor_boots": "White Armor Boots",
+  "item.naraka.armor_powder": "Armor Powder",
+  "item.naraka.large_armor_powder": "Large Armor Powder",
+  "effect.naraka.reply_armor": "Reply Armor"
 }

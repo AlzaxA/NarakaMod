@@ -25,6 +25,8 @@ public class ModItemGroups {
                         entries.add(ModItems.WHITE_ARMOR_BOOTS);
                         entries.add(ModItems.WHITE_ARMOR_LEGGINGS);
                         entries.add(ModItems.WHITE_ARMOR_HELMET);
+                        entries.add(ModItems.ARMOR_POWDER);
+                        entries.add(ModItems.LARGE_ARMOR_POWDER);
                     }).build());
 
     public static void init() {

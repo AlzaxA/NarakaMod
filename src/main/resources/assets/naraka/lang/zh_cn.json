@@ -6,5 +6,8 @@
   "item.naraka.white_armor_helmet": "白甲·头盔",
   "item.naraka.white_armor_chestplate": "白甲·胸甲",
   "item.naraka.white_armor_leggings": "白甲·护腿",
-  "item.naraka.white_armor_boots": "白甲·靴子"
+  "item.naraka.white_armor_boots": "白甲·靴子",
+  "item.naraka.armor_powder": "护甲粉末",
+  "item.naraka.large_armor_powder": "大型护甲粉末",
+  "effect.naraka.reply_armor": "护甲回复"
 }

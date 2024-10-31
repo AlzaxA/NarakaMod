@@ -16,13 +16,17 @@ public class ModItems {
     // 添加大型凝血丸 ———— large cagulation pills
     public static final Item LARGR_CAGULATION_PILLS = registerItems("large_cagulation_pills", new Item(new FabricItemSettings().food(ModFoodComponent.LARGE_CAGULATION_PILLS).maxCount(2)));
     // 添加白甲_头盔 ———— white_armor_helmet
-    public  static final Item WHITE_ARMOR_HELMET = registerItems("white_armor_helmet",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.HELMET,new FabricItemSettings()));
+    public static final Item WHITE_ARMOR_HELMET = registerItems("white_armor_helmet", new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
     // 添加白甲_靴子 ———— white_armor_boots
-    public  static final Item WHITE_ARMOR_BOOTS = registerItems("white_armor_boots",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.BOOTS,new FabricItemSettings()));
+    public static final Item WHITE_ARMOR_BOOTS = registerItems("white_armor_boots", new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     // 添加白甲_胸甲 ———— white_armor_chestplate
-    public  static final Item WHITE_ARMOR_CHESTPLATE = registerItems("white_armor_chestplate",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.CHESTPLATE,new FabricItemSettings()));
+    public static final Item WHITE_ARMOR_CHESTPLATE = registerItems("white_armor_chestplate", new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     // 添加白甲_护腿 ———— white_armor_leggings
-    public  static final Item WHITE_ARMOR_LEGGINGS = registerItems("white_armor_leggings",new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
+    public static final Item WHITE_ARMOR_LEGGINGS = registerItems("white_armor_leggings", new ModArmorItem(ModArmorMaterial.WHITE_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    // 添加护甲粉末 ———— armor_powder
+    public static final Item ARMOR_POWDER = registerItems("armor_powder", new Item(new FabricItemSettings().food(ModFoodComponent.ARMOR_POWDER).maxCount(8)));
+    // 添加大型护甲粉末 ———— large_armor_powder
+    public static final Item LARGE_ARMOR_POWDER = registerItems("large_armor_powder", new Item(new FabricItemSettings().food(ModFoodComponent.LARGE_ARMOR_POWDER).maxCount(2)));
 
     private static Item registerItems(String id, Item item) {
         // 注册物品到游戏中
