@@ -23,7 +23,8 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> map =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterial.WHITE_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true))
-                    .build();
+                    .put(ModArmorMaterial.BULE_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true)).build();
+
 
     @Override
     // 每Tick监视物品栏，判断是否满足条件
@@ -31,22 +32,22 @@ public class ModArmorItem extends ArmorItem {
         if (!world.isClient() && entity instanceof PlayerEntity player) {
             if (JudgingHelmetDurability(player)) {
                 // 自动脱下装备到物品栏
-                player.getInventory().getArmorStack(3).setDamage(this.material.getDurability(Type.HELMET) - 10);
+                player.getInventory().getArmorStack(3).setDamage(player.getInventory().getArmorStack(3).getMaxDamage() - 10);
                 player.getInventory().insertStack(player.getInventory().getArmorStack(3));
                 player.equipStack(EquipmentSlot.HEAD, ItemStack.EMPTY);
             }
             if (JudgingChestplateDurability(player)) {
-                player.getInventory().getArmorStack(2).setDamage(this.material.getDurability(Type.CHESTPLATE) - 10);
+                player.getInventory().getArmorStack(2).setDamage(player.getInventory().getArmorStack(2).getMaxDamage() - 10);
                 player.getInventory().insertStack(player.getInventory().getArmorStack(2));
                 player.equipStack(EquipmentSlot.CHEST, ItemStack.EMPTY);
             }
             if (JudgingLeggingsDurability(player)) {
-                player.getInventory().getArmorStack(1).setDamage(this.material.getDurability(Type.LEGGINGS) - 10);
+                player.getInventory().getArmorStack(1).setDamage(player.getInventory().getArmorStack(1).getMaxDamage() - 10);
                 player.getInventory().insertStack(player.getInventory().getArmorStack(1));
                 player.equipStack(EquipmentSlot.LEGS, ItemStack.EMPTY);
             }
             if (JudgingBootsDurability(player)) {
-                player.getInventory().getArmorStack(0).setDamage(this.material.getDurability(Type.BOOTS) - 10);
+                player.getInventory().getArmorStack(0).setDamage(player.getInventory().getArmorStack(0).getMaxDamage() - 10);
                 player.getInventory().insertStack(player.getInventory().getArmorStack(0));
                 player.equipStack(EquipmentSlot.FEET, ItemStack.EMPTY);
             }
@@ -59,19 +60,19 @@ public class ModArmorItem extends ArmorItem {
 
     // 判断装备耐久
     private boolean JudgingHelmetDurability(PlayerEntity player) {
-        return this.material.getDurability(Type.HELMET) - player.getInventory().getArmorStack(3).getDamage() < 10;
+        return player.getInventory().getArmorStack(3).getMaxDamage() - player.getInventory().getArmorStack(3).getDamage() < 10;
     }
 
     private boolean JudgingChestplateDurability(PlayerEntity player) {
-        return this.material.getDurability(Type.CHESTPLATE) - player.getInventory().getArmorStack(2).getDamage() < 10;
+        return player.getInventory().getArmorStack(2).getMaxDamage() - player.getInventory().getArmorStack(2).getDamage() < 10;
     }
 
     private boolean JudgingLeggingsDurability(PlayerEntity player) {
-        return this.material.getDurability(Type.LEGGINGS) - player.getInventory().getArmorStack(1).getDamage() < 10;
+        return player.getInventory().getArmorStack(1).getMaxDamage() - player.getInventory().getArmorStack(1).getDamage() < 10;
     }
 
     private boolean JudgingBootsDurability(PlayerEntity player) {
-        return this.material.getDurability(Type.BOOTS) - player.getInventory().getArmorStack(0).getDamage() < 10;
+        return player.getInventory().getArmorStack(0).getMaxDamage() - player.getInventory().getArmorStack(0).getDamage() < 10;
     }
 
     // 判断是否有全套盔甲
@@ -93,6 +94,7 @@ public class ModArmorItem extends ArmorItem {
             }
         }
     }
+
 
     // 给玩家增加对应效果
     private void addStatusEffect(PlayerEntity player, StatusEffectInstance effectInstance) {

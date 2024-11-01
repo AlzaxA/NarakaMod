@@ -12,7 +12,12 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements ArmorMaterial {
     // 添加白甲套装
     WHITE_ARMOR("white_armor", 4, new int[]{1, 3, 2, 1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER)),
-    BULE_ARMOR("blue_armor", 6, new int[]{1, 3, 2, 1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER));
+    //添加蓝甲套装
+    BULE_ARMOR("blue_armor", 6, new int[]{1, 3, 2, 1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER)),
+    //添加紫甲套装
+    PURPLE_ARMOR("purple_armor", 8, new int[]{1, 3, 2, 1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER)),
+    //添加金甲套装
+    GOLD_ARMOR("gold_armor", 10, new int[]{1, 3, 2, 1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0, 0.1f, () -> Ingredient.ofItems(ModItems.ICE_ETHER));
 
     private final String name;
     // 耐久倍数

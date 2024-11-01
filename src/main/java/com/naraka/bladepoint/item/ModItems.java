@@ -27,7 +27,14 @@ public class ModItems {
     public static final Item ARMOR_POWDER = registerItems("armor_powder", new Item(new FabricItemSettings().food(ModFoodComponent.ARMOR_POWDER).maxCount(8)));
     // 添加大型护甲粉末 ———— large_armor_powder
     public static final Item LARGE_ARMOR_POWDER = registerItems("large_armor_powder", new Item(new FabricItemSettings().food(ModFoodComponent.LARGE_ARMOR_POWDER).maxCount(2)));
-
+    // 添加蓝甲_头盔 ———— blue_armor_helmet
+    public static final Item BLUE_ARMOR_HELMET = registerItems("blue_armor_helmet", new ModArmorItem(ModArmorMaterial.BULE_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    // 添加蓝甲_靴子 ———— blue_armor_boots
+    public static final Item BLUE_ARMOR_BOOTS = registerItems("blue_armor_boots", new ModArmorItem(ModArmorMaterial.BULE_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    // 添加蓝甲_胸甲 ———— blue_armor_chestplate
+    public static final Item BLUE_ARMOR_CHESTPLATE = registerItems("blue_armor_chestplate", new ModArmorItem(ModArmorMaterial.BULE_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    // 添加蓝甲_护腿 ———— blue_armor_leggings
+    public static final Item BLUE_ARMOR_LEGGINGS = registerItems("blue_armor_leggings", new ModArmorItem(ModArmorMaterial.BULE_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     private static Item registerItems(String id, Item item) {
         // 注册物品到游戏中
         return Registry.register(Registries.ITEM, Identifier.of(Naraka.MOD_ID, id), item);
