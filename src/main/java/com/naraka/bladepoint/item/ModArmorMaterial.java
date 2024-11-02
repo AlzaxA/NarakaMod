@@ -33,7 +33,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     // 击退抗性
     private final float knockbackResistance;
     // 修理材料
-    private Supplier<Ingredient> repairIngredientSupplier;
+    private final Supplier<Ingredient> repairIngredientSupplier;
     // 头盔，衣服，裤子，鞋子基础耐久
     private static final int[] BASE_DURABILITY = {13, 15, 16, 11};
 

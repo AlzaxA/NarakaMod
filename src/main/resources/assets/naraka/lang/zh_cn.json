@@ -13,5 +13,13 @@
   "item.naraka.blue_armor_chestplate": "蓝甲·胸甲",
   "item.naraka.blue_armor_leggings": "蓝甲·护腿",
   "item.naraka.blue_armor_boots": "蓝甲·靴子",
+  "item.naraka.purple_armor_helmet": "紫甲·头盔",
+  "item.naraka.purple_armor_chestplate": "紫甲·胸甲",
+  "item.naraka.purple_armor_leggings": "紫甲·护腿",
+  "item.naraka.purple_armor_boots": "紫甲·靴子",
+  "item.naraka.gold_armor_helmet": "金甲·头盔",
+  "item.naraka.gold_armor_chestplate": "金甲·胸甲",
+  "item.naraka.gold_armor_leggings": "金甲·护腿",
+  "item.naraka.gold_armor_boots": "金甲·靴子",
   "effect.naraka.reply_armor": "护甲回复"
 }

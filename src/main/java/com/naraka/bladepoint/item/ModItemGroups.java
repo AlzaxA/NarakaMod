@@ -21,16 +21,24 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_ETHER);
                         entries.add(ModItems.CAGULATION_PILLS);
                         entries.add(ModItems.LARGR_CAGULATION_PILLS);
-                        entries.add(ModItems.WHITE_ARMOR_CHESTPLATE);
-                        entries.add(ModItems.WHITE_ARMOR_BOOTS);
-                        entries.add(ModItems.WHITE_ARMOR_LEGGINGS);
                         entries.add(ModItems.WHITE_ARMOR_HELMET);
+                        entries.add(ModItems.WHITE_ARMOR_CHESTPLATE);
+                        entries.add(ModItems.WHITE_ARMOR_LEGGINGS);
+                        entries.add(ModItems.WHITE_ARMOR_BOOTS);
                         entries.add(ModItems.ARMOR_POWDER);
                         entries.add(ModItems.LARGE_ARMOR_POWDER);
-                        entries.add(ModItems.BLUE_ARMOR_BOOTS);
+                        entries.add(ModItems.BLUE_ARMOR_HELMET);
                         entries.add(ModItems.BLUE_ARMOR_CHESTPLATE);
                         entries.add(ModItems.BLUE_ARMOR_LEGGINGS);
-                        entries.add(ModItems.BLUE_ARMOR_HELMET);
+                        entries.add(ModItems.BLUE_ARMOR_BOOTS);
+                        entries.add(ModItems.PURPLE_ARMOR_HELMET);
+                        entries.add(ModItems.PURPLE_ARMOR_CHESTPLATE);
+                        entries.add(ModItems.PURPLE_ARMOR_LEGGINGS);
+                        entries.add(ModItems.PURPLE_ARMOR_BOOTS);
+                        entries.add(ModItems.GOLD_ARMOR_HELMET);
+                        entries.add(ModItems.GOLD_ARMOR_CHESTPLATE);
+                        entries.add(ModItems.GOLD_ARMOR_LEGGINGS);
+                        entries.add(ModItems.GOLD_ARMOR_BOOTS);
                     }).build());
 
     public static void init() {

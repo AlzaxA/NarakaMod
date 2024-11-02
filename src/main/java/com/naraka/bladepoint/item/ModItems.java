@@ -35,6 +35,22 @@ public class ModItems {
     public static final Item BLUE_ARMOR_CHESTPLATE = registerItems("blue_armor_chestplate", new ModArmorItem(ModArmorMaterial.BULE_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     // 添加蓝甲_护腿 ———— blue_armor_leggings
     public static final Item BLUE_ARMOR_LEGGINGS = registerItems("blue_armor_leggings", new ModArmorItem(ModArmorMaterial.BULE_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    // 添加紫甲_头盔 ———— purple_armor_helmet
+    public static final Item PURPLE_ARMOR_HELMET = registerItems("purple_armor_helmet", new ModArmorItem(ModArmorMaterial.PURPLE_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    // 添加紫甲_靴子 ———— purple_armor_boots
+    public static final Item PURPLE_ARMOR_BOOTS = registerItems("purple_armor_boots", new ModArmorItem(ModArmorMaterial.PURPLE_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    // 添加紫甲_胸甲 ———— purple_armor_chestplate
+    public static final Item PURPLE_ARMOR_CHESTPLATE = registerItems("purple_armor_chestplate", new ModArmorItem(ModArmorMaterial.PURPLE_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    // 添加紫甲_护腿 ———— purple_armor_leggings
+    public static final Item PURPLE_ARMOR_LEGGINGS = registerItems("purple_armor_leggings", new ModArmorItem(ModArmorMaterial.PURPLE_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    // 添加紫甲_头盔 ———— gold_armor_helmet
+    public static final Item GOLD_ARMOR_HELMET = registerItems("gold_armor_helmet", new ModArmorItem(ModArmorMaterial.GOLD_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    // 添加紫甲_靴子 ———— gold_armor_boots
+    public static final Item GOLD_ARMOR_BOOTS = registerItems("gold_armor_boots", new ModArmorItem(ModArmorMaterial.GOLD_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    // 添加紫甲_胸甲 ———— gold_armor_chestplate
+    public static final Item GOLD_ARMOR_CHESTPLATE = registerItems("gold_armor_chestplate", new ModArmorItem(ModArmorMaterial.GOLD_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    // 添加紫甲_护腿 ———— gold_armor_leggings
+    public static final Item GOLD_ARMOR_LEGGINGS = registerItems("gold_armor_leggings", new ModArmorItem(ModArmorMaterial.GOLD_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     private static Item registerItems(String id, Item item) {
         // 注册物品到游戏中
         return Registry.register(Registries.ITEM, Identifier.of(Naraka.MOD_ID, id), item);
@@ -43,6 +59,5 @@ public class ModItems {
     public static void init() {
         // 初始化
         Naraka.LOGGER.info("Registering Mod Items");
-
     }
 }

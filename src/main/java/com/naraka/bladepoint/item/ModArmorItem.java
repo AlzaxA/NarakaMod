@@ -23,7 +23,9 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> map =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterial.WHITE_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true))
-                    .put(ModArmorMaterial.BULE_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true)).build();
+                    .put(ModArmorMaterial.BULE_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true))
+                    .put(ModArmorMaterial.PURPLE_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true))
+                    .put(ModArmorMaterial.GOLD_ARMOR, new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true)).build();
 
 
     @Override
